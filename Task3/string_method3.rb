@@ -61,3 +61,12 @@ e.clear
 puts e.empty?
 
 
+puts "\n\n"
+s = 1..2
+puts s.entries
+
+# x = "january".."april"
+# puts x.entries
+
+# z = 1.0..5.0
+# puts z.entries
