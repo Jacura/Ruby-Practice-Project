@@ -16,16 +16,6 @@ p :"welcome to ruby portal".inspect
 p :ruby.to_s
 p :"welcome to ruby portal".to_s
 
-#<=> :It compares sym to other_sym after calling to_s. It returns -1 if sym is less than other_sym,
-# it returns 0 if sym is equal to other_sym,
-# or it returns +1 if sym is greater than other_sym.
-# Using <=>
-a= :ruby
-b = :"welcome to ruby portal"
-puts a<=>b
-c= :ruby
-puts a<=>c
-puts b<=>a
 
 #== : It returns true if the sym is equal to obj, otherwise it return false
 # Using ==
@@ -48,3 +38,42 @@ puts :RuByPlatfoRm.casecmp(:rubyP)
 
 #to_sym This method returns a symbol that corresponding to an object. Here sym has been already a symbol, 
 #so in this case it returns it.
+
+
+
+
+
+#Spaceship Operator
+#<=> :It compares sym to other_sym after calling to_s. It returns -1 if sym is less than other_sym,
+# it returns 0 if sym is equal to other_sym,
+# or it returns +1 if sym is greater than other_sym.
+# Using <=>
+a= :ruby
+b = :"welcome to ruby portal"
+puts a<=>b  # -1
+c= :ruby    
+puts a<=>c  # 0
+puts b<=>a  # 1
+
+#Symbol#===() : ===() is a Symbol class method which compares two Symbol objects.
+#Return: true – if both the symbols are equal otherwise return false
+a = :aBcDeF
+b = :"\u{e4 f6 fc}"
+c = :ABCDEF
+puts "Symbol a === form : #{a === c}\n\n"
+puts "Symbol b === form : #{b === b}\n\n"
+puts "Symbol c === form : #{c === a}\n\n"
+=begin
+OUTPUT
+Symbol a === form : false
+Symbol b === form : true
+Symbol c === form : false
+=end
+
+#Non-Matching Operator
+# !~ :- It is the Inverse of =~
+#So, since String#=~ performs a string/regex match returning the index 
+#of the first match if matched and nil otherwise,
+# String#!~ return false if matched and true otherwise.
+
+#Ruby gem for payment gateway - Ruby Stripe , Ruby Razorpay
