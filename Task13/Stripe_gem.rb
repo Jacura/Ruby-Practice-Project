@@ -49,3 +49,53 @@ d = Date.new(2010, 5, 8)     # => Sat, 08 May 2010
 puts d.wednesday?         # => false
 
 puts d.at_beginning_of_month
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=begin
+
+*********************** Spree  **************************
+
+
+Spree is a headless open source e-commerce platform for global brands.
+Spree is an open-source ecommerce platform built with Ruby on Rails and launched back in 2007.
+Spree is an open source E-commerce platform for Rails 6 with a modern UX, optional PWA frontend, 
+REST API, GraphQL, several official extensions and 3rd party integrations.
+
+
+Spree consists of several different gems (modules), each of which are maintained 
+in a single repository and documented in a single set of online documentation.
+
+-- spree_api (REST API v2 with JavaScript / TypeScript SDK and REST API v1)
+-- spree_graphql (GraphQL API - coming soon)
+-- spree_frontend (mobile-first, blazing fast and customizable storefront)
+-- spree_backend (feature rich Admin Panel)
+-- spree_cmd (command-line tools for developers)
+-- spree_core (models, services & mailers, the basic components of Spree)
+-- spree_sample (sample data for demo purposes)
+
+
+Key features --->
+
+Single brand or multiple brands
+Multi-language and multi-currency
+Single vendor or multi-vendor
+Any 3rd party integrations
+React or Vue Storefront available
+Limitless storefront customization
+Modern API with pre-built SDKs
+Runs anywhere
+
+
+=end
